@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mcsessions",
+  "name": "MCSessions",
+  "description": "Bringing client sessions to Minecraft to empower servers with more single-player-targeted content!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Timardo"],
+  "credits": "My cat for mental support",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
