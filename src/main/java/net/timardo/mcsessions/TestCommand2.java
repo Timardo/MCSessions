@@ -9,12 +9,14 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 
-public class TestCommand implements ICommand {
+import static net.timardo.mcsessions.MCSessions.*;
+
+public class TestCommand2 implements ICommand {
 	
 	private final List<String> aliases = new ArrayList<String>();
 	
-	public TestCommand() {
-		this.aliases.add("teston");
+	public TestCommand2() {
+		this.aliases.add("teston2");
 	}
 
 	@Override
@@ -24,12 +26,12 @@ public class TestCommand implements ICommand {
 
 	@Override
 	public String getName() {
-		return "testonly";
+		return "testonly2";
 	}
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "/testonly";
+		return "/testonly2";
 	}
 
 	@Override
@@ -39,7 +41,7 @@ public class TestCommand implements ICommand {
 
 	@Override
 	public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
-		MCSessions.proxy.handleSessionCreation(server, sender, args); //the only important line here
+		proxy.handleSessionConnection(server, sender, args); //the only important line here
 		
 	}
 
